@@ -1,0 +1,81 @@
+:root {
+  --main-bg-color: #FFFFFF;
+  --start-bg-color: #FFF3EB;
+  --game-bg-color: #D0D0D8;
+  --button-default-bg: #FF8B37;
+  --button-hover-bg: #FFAC70;
+  --button-active-bg: #E87928;
+  --button-color: #FFFFFF;
+  --wrong-answer-bg: #FDEEED;
+  --right-answer-bg: #E6FAEA;
+  --grey-text-color: #D0D0D8;
+  --grey-border-color: #D0D0D8;
+  --light-grey-color: #F5F5F7;
+  --title-color: #1C1C21;
+  --wrong-border: #EC6259;
+  --right-border: #47D867;
+  --question-fild-bg: #E5E5E5
+}
+
+.main {
+  text-align: center;
+}
+
+
+.main-container {
+  background-color: var(--main-bg-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 296px;
+  height: 64px;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 64px;
+  border-radius: 12px;
+  background: var(--button-default-bg);
+  color: var(--button-color);
+  cursor: pointer;
+  border: none;
+  outline: none
+}
+
+button:hover {
+  background: var(--button-hover-bg);
+}
+
+button:active {
+  background: var(--button-active-bg)
+}
+
+article {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
